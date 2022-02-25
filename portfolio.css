@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
+
+body {
+    margin:0px; 
+    padding:0px;
+    color: #000000;
+    font-family: helvetica;
+    line-height: 1.6;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+}
+
+header {
+    height: 360px;
+    z-index: 10;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: #000000;
+    position: fixed;
+    z-index: 10;
+}
+
+nav div {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    line-height: 60px;
+    position: absolute;
+    top: 0;
+    left: 2%;
+}
+
+nav ul { 
+    list-style-type: none;
+    margin: 0 2% auto 0;
+    padding-left: 0;
+    text-align: right;
+    max-width: 100%;
+}
+
+nav ul li { 
+    display: inline-block; 
+    line-height: 60px;
+    margin-left: 100px;
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: #ffffff;
+}
+
+#portfolio {
+    text-align: center ;
+    margin-top: -200px ;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+
+
+#carrousel {
+    width: 800px;
+    height: 400px;
+    border: solid 4px #FFF;
+    box-shadow: 0 0 14px rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+#container {
+    width: 800px;
+    height: 400px;
+}
+
+.photo {
+    width : 800px;
+    height: 400px;
+    margin: 0;
+    display: inline-block;
+    background-size: cover;
+}
+
+.bouton{
+    position: absolute;
+    width: 70px;
+    cursor: pointer;
+    top: 175px;
+}
+
+#g {
+    left: 0px;
+    transform: rotate(0deg);
+}
+
+#d {
+    right: 0;
+    transform: rotate(180deg);
+}
+
+#g:hover{
+    left: 0px;
+    transform: rotate(0deg) scale(1.2);
+}
+
+#d:hover {
+    right: 0;
+    transform: rotate(180deg) scale(1.2);
+}
+
