@@ -1,39 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+    <!--CSS-->
     <link href="portfolio.css" rel="stylesheet">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--librairie-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
+
 <body>
-    
+
     <header>
         <nav>
             <ul>
-                <li><div class="site-title"> <a href="home.html"> Oriane Tourneroche </a> </div> </li>
+                <li>
+                    <div class="site-title"> <a href="home.html"> Oriane Tourneroche </a> </div>
+                </li>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
-            <ul>
+                <ul>
         </nav>
     </header>
 
     <div id="texte3">
         <div id="portfolio"> Portfolio </div>
     </div>
+    
+    <div id="box1"></div>
 
     <h2></h2>
-    <div id="carrousel">
+    <div id="carrousel" data-aos="fade-right">
         <div id="container"></div>
         <img src="bouton2.png" class="bouton" id="d" />
         <img src="bouton2.png" class="bouton" id="g" />
     </div>
 
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="portfolio.js"></script>
+    <!--
+    <div class="lecteur">
 
+        <div class="allVid">
+            <video src="video.mp4" class="" video></video>
+
+            <div class="controls">
+                <div class="orange-bar">
+                    <div class="orange-juice"></div>
+                </div>
+
+                <div class="buttons">
+                    <button id="play-pause"></button>
+                    <button id="mute">Mute</button>
+                    <input type="range" id="volumeSlider" type="range" min="0" max="100" value="50" step="1">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    -->
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script> AOS.init(); </script>
+    <script src="portfolio.js"></script>
+    
 </body>
+
 </html>

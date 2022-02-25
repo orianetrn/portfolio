@@ -4,7 +4,6 @@ body {
     margin:0px; 
     padding:0px;
     color: #000000;
-    font-family: helvetica;
     line-height: 1.6;
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
@@ -65,7 +64,12 @@ nav ul li a {
     font-size: 35px;
 }
 
-
+#box1 {
+    width: 600px;
+    height: 500px;
+    background-color: #000000;
+}
+/* carrousel */
 
 #carrousel {
     width: 800px;
@@ -116,3 +120,87 @@ nav ul li a {
     transform: rotate(180deg) scale(1.2);
 }
 
+/* Lecteur video */
+/*
+.lecteur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    width: 100%;
+}
+
+.allVid {
+    width: 100%;
+    max-width: 800px;
+    position: relative; 
+    overflow: hidden;
+}
+
+.controls {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    background: #000000;
+
+    transform: translateY(100%) translateY(-5px);
+    transition: all 0.2s;
+}
+
+.allVid:hover .controls {
+    transform: translateY(0);
+}
+
+.buttons {
+    padding: 10px;
+}
+
+
+.buttons button {
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: #fff;
+}
+
+#mute {
+    position: relative;
+    top: -5px;
+}
+
+.buttons #play-pause::before {
+    
+    content: '\f144';
+    font-family: 'Font Awesome 5 free';  
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    font-size: 28px;
+    color: #fff;
+}
+
+.buttons #play-pause.play::before {
+    content: '\f144';
+}
+
+.buttons #play-pause.pause::before {
+    content: '\f28b';
+}
+
+.orange-bar {
+    height: 10px;
+    width: 100%;
+    background: #000;
+    cursor: pointer;
+}
+
+.orange-juice {
+    height: 10px;
+    background-color: #ff7d00;
+}
+*/

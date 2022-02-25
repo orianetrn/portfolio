@@ -64,4 +64,15 @@ nav ul li a {
     font-size: 35px;
 }
 
+/* animation sourie */
+
+rect {
+    fill: transparent;
+    pointer-events: all;
+}
+
+circle {
+    stroke-width: 3.5px;
+}
+
 
