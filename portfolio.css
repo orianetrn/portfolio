@@ -7,6 +7,7 @@ body {
     line-height: 1.6;
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
+    
 }
 
 header {
@@ -61,33 +62,201 @@ nav ul li a {
     text-align: center ;
     margin-top: -200px ;
     font-weight: 500;
-    font-size: 35px;
+    font-size: 50px;
 }
 
-#box1 {
-    width: 600px;
-    height: 500px;
-    background-color: #000000;
+/* textAnim */
+
+h2 {
+    font-size: 30px;
+    text-align: center;
 }
-/* carrousel */
+
+#descriptif1 , #descriptif2 , #descriptif3 , #descriptif4 , #descriptif5 , #descriptif6 {
+    font-size: 20px;
+}
+
+/* carrousel rosignol */
+
+#rosignol {
+    display: flex;
+    margin: 0 auto;
+    width: 1050px;
+    margin-top: 75px;
+    text-align: center;
+}
+
+#descriptif1 {
+    flex: 0 0 50%;
+    padding-right: 50px;
+    padding-top: 120px;
+    
+}
+
+.carrousel {
+    border: solid 4px #FFF;
+    box-shadow: 0 0 14px rgba(0,0,0,0.3);
+    overflow: hidden;
+    width: 530px;
+    height: 400px;
+    flex: 0 0 50%;
+}
+
+.container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+#img1 {
+    object-fit: cover;
+}
+
+/* maquette */
+
+#maquette {
+    display: flex;
+    margin: 0 auto;
+    width: 1050px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+#descriptif2 {
+    flex: 0 0 50%;
+    padding-left: 50px;
+    padding-top: 130px;
+    
+}
+
+/* photoshop */
+
+#photoshop {
+    display: flex;
+    margin: 0 auto;
+    width: 1050px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+#descriptif3 {
+    flex: 0 0 50%;
+    padding-right: 50px;
+    padding-top: 230px;
+}
+
+/* halloween */
+
+#halloween {
+    display: flex;
+    margin: 0 auto;
+    width: 1050px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+#descriptif4 {
+    flex: 0 0 50%;
+    padding-left: 50px;
+    padding-top: 70px;
+    
+}
+.carrousel2 {
+    border: solid 4px #FFF;
+    box-shadow: 0 0 14px rgba(0,0,0,0.3);
+    overflow: hidden;
+    width: 420px;
+    height: 298px;
+}
+
+.container2 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+#img3 {
+    object-fit: cover;
+}
+
+/* resto pizza */
+
+#pizza {
+    display: flex;
+    margin: 0 auto;
+    width: 1050px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+#descriptif5 {
+    flex: 0 0 35%;
+    padding-right: 50px;
+    padding-top: 230px;
+}
+
+.carrousel3 {
+    border: solid 4px #FFF;
+    box-shadow: 0 0 14px rgba(0,0,0,0.3);
+    overflow: hidden;
+    width: 600px;
+    height: 600px;
+}
+
+.container3 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+#img5 {
+    object-fit: cover;
+}
+
+/* projet video */
+
+#projet-video {
+    display: flex;
+    margin: 0 auto;
+    width: 1050px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+#descriptif7 {
+    flex: 0 0 35%;
+    padding-right: 50px;
+    padding-top: 150px;
+}
+
+/* carrousel portfolio */
+
+#portfolio2 {
+    margin-top: 150px;
+    text-align: center;
+}
 
 #carrousel {
     width: 800px;
-    height: 400px;
+    height: 600px;
     border: solid 4px #FFF;
     box-shadow: 0 0 14px rgba(0,0,0,0.3);
     position: relative;
     overflow: hidden;
+
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #container {
     width: 800px;
-    height: 400px;
+    height: 600px;
 }
 
 .photo {
     width : 800px;
-    height: 400px;
+    height: 600px;
     margin: 0;
     display: inline-block;
     background-size: cover;
@@ -95,9 +264,9 @@ nav ul li a {
 
 .bouton{
     position: absolute;
-    width: 70px;
+    width: 50px;
     cursor: pointer;
-    top: 175px;
+    top: 290px;
 }
 
 #g {
@@ -120,87 +289,42 @@ nav ul li a {
     transform: rotate(180deg) scale(1.2);
 }
 
-/* Lecteur video */
-/*
-.lecteur {
+/* footer */
+
+#footer {
+    background-color: #000000;
+    width: 100%;
+    height: 110px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    margin-top: 25px;
 }
 
-.video {
-    width: 100%;
+#instagram {
+    flex: 0 0 20%;
 }
 
-.allVid {
-    width: 100%;
-    max-width: 800px;
-    position: relative; 
-    overflow: hidden;
+#footer-menu {
+    flex: 0 0 30%;
 }
 
-.controls {
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    flex-wrap: wrap;
-    background: #000000;
-
-    transform: translateY(100%) translateY(-5px);
-    transition: all 0.2s;
+#menu {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 500px;
 }
 
-.allVid:hover .controls {
-    transform: translateY(0);
-}
-
-.buttons {
-    padding: 10px;
-}
-
-
-.buttons button {
-    background: none;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-    color: #fff;
-}
-
-#mute {
-    position: relative;
-    top: -5px;
-}
-
-.buttons #play-pause::before {
-    
-    content: '\f144';
-    font-family: 'Font Awesome 5 free';  
+#logo {
     width: 30px;
-    height: 30px;
-    display: inline-block;
-    font-size: 28px;
-    color: #fff;
+    height: auto;
+    padding-top: 40px;
 }
 
-.buttons #play-pause.play::before {
-    content: '\f144';
-}
+#designoriane {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 20px;
 
-.buttons #play-pause.pause::before {
-    content: '\f28b';
 }
-
-.orange-bar {
-    height: 10px;
-    width: 100%;
-    background: #000;
-    cursor: pointer;
-}
-
-.orange-juice {
-    height: 10px;
-    background-color: #ff7d00;
-}
-*/

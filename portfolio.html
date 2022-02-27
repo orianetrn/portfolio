@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
     <!--CSS-->
     <link href="portfolio.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -34,45 +34,159 @@
         </nav>
     </header>
 
+    <!-- Titre -->
+
     <div id="texte3">
         <div id="portfolio"> Portfolio </div>
     </div>
-    
-    <div id="box1"></div>
 
-    <h2></h2>
-    <div id="carrousel" data-aos="fade-right">
-        <div id="container"></div>
-        <img src="bouton2.png" class="bouton" id="d" />
-        <img src="bouton2.png" class="bouton" id="g" />
+    <!-- Texte animation -->
+
+    <h2 id="textAnim>"></h2>
+
+    <!-- Carrousel rosignol -->
+
+    <div id="rosignol">
+        <p id="descriptif1">
+            Réalisation d’une planche de surf pour la marque Rossignol lors d’un projet en marketing. Création de
+            produits dérivés à
+            distribuer lors d’un événement de lancement.
+            <br>Design réalisé avec Illustrator et mockup réalisé avec Photoshop.
+        </p>
+
+        <div class="carrousel" data-aos="fade-left" data-aos-duration="3000">
+            <div class="container" id="img">
+                <img id="img1" src="rosignol1.png" alt="ceci est une photo">
+                <img id="img1" src="rosignol2.png" alt="ceci est une photo">
+                <img id="img1" src="rosignol3.png" alt="ceci est une photo">
+            </div>
+        </div>
     </div>
 
-    <!--
-    <div class="lecteur">
+    <!-- maquette -->
 
-        <div class="allVid">
-            <video src="video.mp4" class="" video></video>
+    <div id="maquette">
 
-            <div class="controls">
-                <div class="orange-bar">
-                    <div class="orange-juice"></div>
-                </div>
+        <div id="maquetteImg" data-aos="fade-right" data-aos-duration="3000">
+            <img src="maquette0.png" alt="ceci est une photo" width="530px" height="400px" />
+        </div>
 
-                <div class="buttons">
-                    <button id="play-pause"></button>
-                    <button id="mute">Mute</button>
-                    <input type="range" id="volumeSlider" type="range" min="0" max="100" value="50" step="1">
-                </div>
-            </div>
+        <p id="descriptif2">
+            Création d’une page d’accueil d’un site proposant des recettes de cocktails. Réalisé sur Adobe xd.
+            <br>Rendu attendu : maquette xd et explication des inspirations.
+            <br>Tendances utilisées : Oversize / Sombre / Couleurs lumineuses
+        </p>
+
+    </div>
+
+    <!-- photoshop -->
+
+    <div id="photoshop">
+
+        <p id="descriptif3">
+            Réalisation d’un collage surréaliste avec intégration de forme multiple pour un devoir en outils de
+            production graphique web.
+            Devoir réalisé sur Photoshop.
+            <br>Travail sur le détourage, création de masque d’écrétage et jeu d’opacité. Travail sur la bonne
+            organisation des calques avec
+            créations de différents dossiers.
+        </p>
+
+        <div id="photoshopImg" data-aos="fade-left" data-aos-duration="3000">
+            <img src="photoshop.png" alt="ceci est une photo" width="400px" height="auto" />
         </div>
 
     </div>
-    -->
+
+    <!-- Carrousel halloween -->
+
+    <div id="halloween">
+
+        <div class="carrousel2" data-aos="fade-right" data-aos-duration="3000">
+            <div class="container2" id="img2">
+                <img id="img3" src="halloween1.png" alt="ceci est une photo">
+                <img id="img3" src="halloween2.png" alt="ceci est une photo">
+                <img id="img3" src="halloween3.png" alt="ceci est une photo">
+            </div>
+        </div>
+
+        <p id="descriptif4">
+            Travail sur Photoshop et Illustrator. L’objectif était de réaliser une carte d’Halloween.
+            <br>La découpe de la tête a été travaillée sur Photoshop.
+            <br>Les formes ajoutées ont été faites à l’aide d’Illustrator. Le verso de la carte est entièrement réalisé
+            sur Illustrator.
+        </p>
+    </div>
+
+    <!-- Carrousel maquette resto pizza -->
+
+    <div id="pizza">
+        <p id="descriptif5">
+            Réalisation d'une maquette de site vitrine pour un restaurant fictif.
+            <br> Utilisation d'adobe xd pour le projet. Travail sur le design et le prototypage.
+        </p>
+        <div class="carrousel3" data-aos="fade-left" data-aos-duration="3000">
+            <div class="container3" id="img4">
+                <img id="img5" src="maquette1.png" alt="ceci est une photo">
+                <img id="img5" src="maquette2.png" alt="ceci est une photo">
+                <img id="img5" src="maquette3.png" alt="ceci est une photo">
+            </div>
+        </div>
+    </div>
+
+    <!-- Video -->
+    <div id="projet-video">
+
+        <div id="video1" data-aos="fade-right" data-aos-duration="3000">
+            <video controls poster="miniature.png">
+                <source src="video.mp4" />
+            </video>
+        </div>
+
+        <p id="descriptif7">Projet vidéo, sur le thème du temps qui passe.
+            <br> Réaliser avec le logiciel Premiere Pro.
+        </p>
+
+    </div>
+
+    <!-- Carrousel portfolio -->
+
+    <div id="portfolio2">
+        <p id="descriptif6">
+            Conception d'un portfolio print, inspiration minimaliste. Utilisation des couleurs blanche et noire afin de
+            faire resortir la couleur des projets.
+            <br> Devoir réalisé avec Indesign.
+        </p>
+        <div id="carrousel" data-aos="zoom-in" data-aos-duration="3000">
+            <div id="container"></div>
+            <img src="bouton1.png" class="bouton" id="d" />
+            <img src="bouton1.png" class="bouton" id="g" />
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div id="footer">
+
+        <div id="instagram">
+            <img src="instagram.png" target="_blank" id="logo" href="https://www.instagram.com/designoriane/?hl=fr">
+            <a href="https://www.instagram.com/designoriane/?hl=fr" target="_blank" id="designoriane" >designoriane</a>
+        </div>
+
+        <div id="footer-menu">
+            <ul>
+                <li id="menu"><a id="menu" href="home.html">Home</a></li>
+                <li id="menu"><a id="menu" href="portfolio.html">Portfolio</a></li>
+                <li id="menu"><a id="menu" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
 
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script> AOS.init(); </script>
     <script src="portfolio.js"></script>
-    
+
 </body>
 
 </html>
